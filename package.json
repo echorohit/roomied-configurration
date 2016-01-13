@@ -4,7 +4,9 @@
   "description": "Configuration services of roomied ",
   "main": "server.js",
   "scripts": {
-    "test": "npm test"
+    "start": "grunt",
+    "test": "grunt test",
+    "postinstall": "bower install --config.interactive=false"
   },
   "repository": {
     "type": "git",
@@ -18,22 +20,12 @@
   "bugs": {
     "url": "https://github.com/echorohit/roomied-configurration/issues"
   },
-  "engines":{
+  "engines": {
     "node": ">=4.1.1",
     "npm": ">=3.3.6"
   },
   "homepage": "https://github.com/echorohit/roomied-configurration#readme",
-  "scripts":{
-    "start": "grunt",
-    "test": "grunt test",
-    "postinstall": "bower install --config.interactive=false"
-  },
   "dependencies": {
-    "glue": "^3.0.0",
-    "gulp": "^3.9.0",
-    "gulp-nodemon": "^2.0.6",
-    "hapi": "^12.0.1",
-    "hoek": "^3.0.4",
     "async": "~1.4.2",
     "bcrypt": "^0.8.5",
     "bell": "^5.3.x",
@@ -45,17 +37,22 @@
     "dogwater": "^1.0.1",
     "forever": "~0.15.1",
     "glob": "~5.0.15",
+    "glue": "^3.0.0",
     "good": "^6.4.0",
     "good-console": "^5.1.0",
     "good-file": "^5.1.0",
     "grunt-cli": "~0.1.13",
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.6",
     "hapi": "~10.1.0",
     "hapi-auth-cookie": "~3.1.0",
+    "hoek": "^3.0.4",
     "inert": "^3.0.2",
     "lodash": "~3.10.1",
     "mongodb": "^2.x.x",
     "node-uuid": "^1.4.3",
     "nodemailer": "^1.5.0",
+    "sails-mysql": "^0.11.2",
     "sails-postgresql": "^0.10.16",
     "swig": "~1.4.2",
     "vision": "^3.0.0",
