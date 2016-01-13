@@ -1,0 +1,19 @@
+{
+  "server": {
+    "app": {
+      "slogan": "Roomied Servers"
+    }
+  },
+  "connections": [
+    {
+      "address": "localhost",
+      "port": 80,
+      "labels": ["web-ui"]
+    },
+    {
+      "address": "localhost",
+      "port": 9000,
+      "labels": ["api"]
+    }
+  ]
+}
